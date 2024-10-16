@@ -21,6 +21,15 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Semantic Units Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000008>))
+Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -46,9 +55,69 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000000> (root node)
+# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000000> (Semantic Unit)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000000> "root node"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/SEMUNIT_0000000> <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000000> "Semantic Unit"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/SEMUNIT_0000000> "Semantic unit is unit of representation possessing 
+semantic signifcance for human readers uniquely identified by a resource"@en)
+
+# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000001> (boolean unit)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/SEMUNIT_0000001> <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/SEMUNIT_0000001> "2024-10-16T08:55:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000001> "boolean unit"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/SEMUNIT_0000001> <http://purl.obolibrary.org/obo/SEMUNIT_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000002> (cardinality restriction unit)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/SEMUNIT_0000002> <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/SEMUNIT_0000002> "2024-10-16T08:55:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000002> "cardinality restriction unit"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/SEMUNIT_0000002> <http://purl.obolibrary.org/obo/SEMUNIT_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000003> (compound unit)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/SEMUNIT_0000003> <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/SEMUNIT_0000003> "2024-10-16T08:55:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000003> "compound unit"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/SEMUNIT_0000003> <http://purl.obolibrary.org/obo/SEMUNIT_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000004> (directive unit)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/SEMUNIT_0000004> <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/SEMUNIT_0000004> "2024-10-16T08:55:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000004> "directive unit"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/SEMUNIT_0000004> <http://purl.obolibrary.org/obo/SEMUNIT_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000005> (disagreement unit)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/SEMUNIT_0000005> <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/SEMUNIT_0000005> "2024-10-16T08:55:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000005> "disagreement unit"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/SEMUNIT_0000005> <http://purl.obolibrary.org/obo/SEMUNIT_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000006> (negation unit)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/SEMUNIT_0000006> <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/SEMUNIT_0000006> "2024-10-16T08:55:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000006> "negation unit"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/SEMUNIT_0000006> <http://purl.obolibrary.org/obo/SEMUNIT_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000007> (question unit)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/SEMUNIT_0000007> <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/SEMUNIT_0000007> "2024-10-16T08:55:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000007> "question unit"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/SEMUNIT_0000007> <http://purl.obolibrary.org/obo/SEMUNIT_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/SEMUNIT_0000008> (statement unit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/SEMUNIT_0000008> <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/SEMUNIT_0000008> "2024-10-16T08:55:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000008> "statement unit"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/SEMUNIT_0000008> "A semantic unit that represents a single, human readable statement for the  semantic understanding of a set of triples."@en)
+SubClassOf(<http://purl.obolibrary.org/obo/SEMUNIT_0000008> <http://purl.obolibrary.org/obo/SEMUNIT_0000000>)
 
 
-
+)
