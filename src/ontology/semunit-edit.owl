@@ -11,7 +11,12 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Ontology(<http://purl.obolibrary.org/obo/semunit.owl>
 Import(<http://purl.obolibrary.org/obo/semunit/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/semunit/imports/iao_import.owl>)
-Annotation(dcterms:description "The Semantic Units Ontology defines terms for classifying statements within a knowledge graph.")
+Import(<http://purl.obolibrary.org/obo/semunit/imports/omo_import.owl>)
+Annotation(dce:contributor <https://orcid.org/0000-0002-1595-3213>)
+Annotation(dce:contributor "Pallavi Karanth")
+Annotation(dce:creator <https://orcid.org/0000-0002-8280-0487>)
+Annotation(dce:source <https://doi.org/10.1186/s13326-024-00310-5>)
+Annotation(dcterms:description "The Semantic Units Ontology defines and classifies the concepts that allow the partitioning and structuring of a knowledge graph into semantic units, identifable subgraphs represented in the graph with their own resource. Semantic units are semantically meaningful units of representation."@en)
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Semantic Units Ontology")
 
@@ -23,9 +28,19 @@ Declaration(AnnotationProperty(dcterms:title))
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
 
 ############################
 #   Classes
