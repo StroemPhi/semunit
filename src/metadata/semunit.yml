@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/semunit
+
+idspace: SEMUNIT
+base_url: /obo/semunit
+
+products:
+- semunit.owl: https://raw.githubusercontent.com/stroemphi/semunit/main/semunit.owl
+- semunit.obo: https://raw.githubusercontent.com/stroemphi/semunit/main/semunit.obo
+
+term_browser: ontobee
+example_terms:
+- SEMUNIT_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/stroemphi/semunit/v
+
+- prefix: /tracker/
+  replacement: https://github.com/stroemphi/semunit/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/SEMUNIT?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/stroemphi/semunit/main/
+

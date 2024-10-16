@@ -1,0 +1,39 @@
+## ontology metadata ##
+
+id: semunit
+title: Semantic Units Ontology
+description: "The Semantic Units Ontology defines terms for classifying statements within a knowledge graph."
+contact:  lars.vogt [at] tib [.] eu
+creators: 
+  - orcid.org/0000-0002-8280-0487
+license: https://creativecommons.org/licenses/by/4.0/
+
+## general ODK Settings ##
+
+repo: semunit
+git_main_branch: main
+github_org: stroemphi
+ci:
+  - github_actions
+documentation:
+  documentation_system: mkdocs
+export_formats:
+  - owl
+reasoner: ELK
+release_artefacts:
+  - full
+  - base
+robot_java_args: '-Xmx8G'  # max RAM to be used by Robot in ODK
+
+## CHMO specific Settings ##
+
+import_group:
+  products:
+    - id: bfo
+      module_type: mirror
+      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl
+    - id: omo
+      module_type: mirror
+    - id: iao
+      make_base: true
+
