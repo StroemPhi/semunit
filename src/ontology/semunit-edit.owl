@@ -1,4 +1,3 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/semunit.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -10,26 +9,16 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/semunit.owl>
-
-
 Import(<http://purl.obolibrary.org/obo/semunit/imports/bfo_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/semunit/imports/omo_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/semunit/imports/iao_import.owl>)
-
-
-
 Annotation(dcterms:description "The Semantic Units Ontology defines terms for classifying statements within a knowledge graph.")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Semantic Units Ontology")
-
 
 Declaration(Class(<http://purl.obolibrary.org/obo/SEMUNIT_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
@@ -47,5 +36,4 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEMUNIT_0000000> "root node"@en)
 
 
-)
 
